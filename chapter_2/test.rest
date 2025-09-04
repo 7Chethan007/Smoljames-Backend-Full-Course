@@ -4,10 +4,12 @@ GET http://localhost:8383
 ### TEST GET /dashboard WEBSITE
 GET http://localhost:8383/dashboard
 
-### DATA ENDPOINT
+
+
+### API DATA ENDPOINT
 GET http://localhost:8383/api/data
 
-### DATA ENDPOINT FOR ADDING A USER
+### API DATA ENDPOINT FOR ADDING A USER
 POST http://localhost:8383/api/data
 Content-Type: application/json
 
@@ -15,6 +17,5 @@ Content-Type: application/json
     "name": "chethan"
 }
 
-
-### DELETE END POINT
+### API DATA ENDPOINT FOR DELETING A USER
 DELETE http://localhost:8383/api/data

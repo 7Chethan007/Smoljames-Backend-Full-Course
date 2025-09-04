@@ -26,8 +26,7 @@ app.get('/', (req, res) => {
     // res.send('<h1>Home Page </h1>')
     console.log('User requested home page')
     res.send(`
-        <body
-        style="background:pink;color:blue;">
+        <body style="background:pink;color:blue;">
         <h1>DATA</h1>
             <p>${JSON.stringify(data)}</p>
             <a href='/dashboard'>DASHBOARD</a>
