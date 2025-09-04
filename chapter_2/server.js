@@ -49,6 +49,9 @@ app.get('/dashboard', (req, res) => {
 })
 
 
+
+
+
 // Type - 2
 // API endpoints
 
@@ -79,5 +82,5 @@ app.delete('/api/data',(req,res) => {
 })
 
 
-// console.log('This is an extra line')
+// console.log('This is an extra line')  // This line was for illustrating the use of nodedemo (need not restart server for any new line addion)
 app.listen(PORT, () => console.log(`Server has started on: ${PORT}`))
