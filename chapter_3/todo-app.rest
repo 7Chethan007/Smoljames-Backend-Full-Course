@@ -1,0 +1,44 @@
+### GET /
+GET http://localhost:5003
+
+### Register a user POST /auth/register
+POST http://localhost:5003/auth/register
+Content-Type: application/json
+
+{
+    "username": "testuser@test.com",
+    "password": "testpassword"
+}
+
+### Login a user POST /auth/login
+POST http://localhost:5003/auth/login
+Content-Type: application/json
+
+{
+    "username": "testuser@test.com",
+    "password": "testpassword"
+}
+
+
+### Fetch all todos GET /todos
+GET http://localhost:5003/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsImlhdCI6MTc1NzMyNjYwNywiZXhwIjoxNzU3NDEzMDA3fQ.6SEqICKtCxFWQWzdiXkyQ_JXlkz0278DZkNvm9gh7iI
+
+
+### Create a new todos
+POST http://localhost:5003/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsImlhdCI6MTc1NzMyNjYwNywiZXhwIjoxNzU3NDEzMDA3fQ.6SEqICKtCxFWQWzdiXkyQ_JXlkz0278DZkNvm9gh7iI
+Content-Type: application/json
+
+{
+    "task": "Finish backend along with revision today"
+}
+
+### Update a todo PUT /todos/:id
+PUT http://localhost:5003/todos/2?page=4
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsImlhdCI6MTc1NzMyNjYwNywiZXhwIjoxNzU3NDEzMDA3fQ.6SEqICKtCxFWQWzdiXkyQ_JXlkz0278DZkNvm9gh7iI
+Content-Type: application/json
+
+{
+    "completed": 1
+}
