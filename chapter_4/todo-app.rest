@@ -1,46 +1,43 @@
 ### GET /
 GET http://localhost:5003
 
-### Register a user POST /AUTH/REGISTER
+### Register a user POST /auth/register
 POST http://localhost:5003/auth/register
 Content-Type: application/json
 
 {
-    "username": "gilgamesh@gmail.com",
-    "password": "123123123"
+    "username": "testuser@test.com",
+    "password": "testpassword"
 }
 
-### Login a user POST /AUTH/LOGIN
+### Login a user POST /auth/login
 POST http://localhost:5003/auth/login
 Content-Type: application/json
 
 {
-    "username": "gilgamesh@gmail.com",
-    "password": "123123123"
+    "username": "testuser@test.com",
+    "password": "testpassword"
 }
 
-### Fetch all todos GET /TODOS (protected)
-GET http://localhost:5003/todos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzMxOTA2NDE3LCJleHAiOjE3MzE5OTI4MTd9.0vg4uoLjN2K-G5rR7Nogbq1wcEUMsNJ-CtClsYdLFaM
 
-### Creates a new todo POST /TODOS (protected)
+### Fetch all todos GET /todos
+GET http://localhost:5003/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU3NDk0MzkzLCJleHAiOjE3NTc1ODA3OTN9.dbA6e1ANRCSjxto5gHmEgEzvwHrn2AKsv-P37bxYhJI
+
+### Create a new todos
 POST http://localhost:5003/todos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzMxOTA2NDE3LCJleHAiOjE3MzE5OTI4MTd9.0vg4uoLjN2K-G5rR7Nogbq1wcEUMsNJ-CtClsYdLFaM
-Content-Type: application/json 
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU3NDk0MzkzLCJleHAiOjE3NTc1ODA3OTN9.dbA6e1ANRCSjxto5gHmEgEzvwHrn2AKsv-P37bxYhJI
+Content-Type: application/json
 
 {
-    "task": "Finish coding the projects"
+    "task": "Finish backend along with revision today"
 }
 
-### Update a todo PUT /TODOS/:ID (protected)
+### Update a todo PUT /todos/:id
 PUT http://localhost:5003/todos/2?page=4
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzMxOTA2NDE3LCJleHAiOjE3MzE5OTI4MTd9.0vg4uoLjN2K-G5rR7Nogbq1wcEUMsNJ-CtClsYdLFaM
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU3NDk0MzkzLCJleHAiOjE3NTc1ODA3OTN9.dbA6e1ANRCSjxto5gHmEgEzvwHrn2AKsv-P37bxYhJI
 Content-Type: application/json
 
 {
     "completed": 1
 }
-
-### Delete a todo DELETE /TODOS/:ID (protected)
-DELETE http://localhost:5003/todos/2
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzMxOTA2NDE3LCJleHAiOjE3MzE5OTI4MTd9.0vg4uoLjN2K-G5rR7Nogbq1wcEUMsNJ-CtClsYdLFaM

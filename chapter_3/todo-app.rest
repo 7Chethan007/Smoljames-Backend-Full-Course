@@ -22,12 +22,11 @@ Content-Type: application/json
 
 ### Fetch all todos GET /todos
 GET http://localhost:5003/todos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsImlhdCI6MTc1NzMyNjYwNywiZXhwIjoxNzU3NDEzMDA3fQ.6SEqICKtCxFWQWzdiXkyQ_JXlkz0278DZkNvm9gh7iI
-
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU3NDk0MzkzLCJleHAiOjE3NTc1ODA3OTN9.dbA6e1ANRCSjxto5gHmEgEzvwHrn2AKsv-P37bxYhJI
 
 ### Create a new todos
 POST http://localhost:5003/todos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsImlhdCI6MTc1NzMyNjYwNywiZXhwIjoxNzU3NDEzMDA3fQ.6SEqICKtCxFWQWzdiXkyQ_JXlkz0278DZkNvm9gh7iI
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU3NDk0MzkzLCJleHAiOjE3NTc1ODA3OTN9.dbA6e1ANRCSjxto5gHmEgEzvwHrn2AKsv-P37bxYhJI
 Content-Type: application/json
 
 {
@@ -36,7 +35,7 @@ Content-Type: application/json
 
 ### Update a todo PUT /todos/:id
 PUT http://localhost:5003/todos/2?page=4
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0ZXN0dXNlckB0ZXN0LmNvbSIsImlhdCI6MTc1NzMyNjYwNywiZXhwIjoxNzU3NDEzMDA3fQ.6SEqICKtCxFWQWzdiXkyQ_JXlkz0278DZkNvm9gh7iI
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU3NDk0MzkzLCJleHAiOjE3NTc1ODA3OTN9.dbA6e1ANRCSjxto5gHmEgEzvwHrn2AKsv-P37bxYhJI
 Content-Type: application/json
 
 {
