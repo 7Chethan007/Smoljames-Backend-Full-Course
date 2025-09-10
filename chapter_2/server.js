@@ -77,6 +77,7 @@ app.post('/api/data',(req,res) => {
 app.delete('/api/data',(req,res) => {
     data.pop()
     console.log("we deleted")
+    console.log(data)
     res.sendStatus(203)
 })
 
